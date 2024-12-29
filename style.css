@@ -1,0 +1,86 @@
+/*estilos generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /*para que el padding y margin no afecten el   tamaño del elemento*/
+    font-family: 'lato', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center; /*centra el contenido*/
+    align-items: center; /*centra el contenido*/
+    height: 100vh; /*100% para la altura*/
+    text-align: center; /*centra el texto*/
+    background-image: url(imagenes/biblioteca.jpg);
+    background-repeat: no-repeat; /*para que no se repita la imagen*/
+    background-size: cover; /*para que la imagen se ajuste al tamaño del contenedor*/
+    background-position: center; /*centra la imagen*/
+}
+.contenido-centrado{
+    display: flex;
+    flex-wrap: wrap; /*para que los elementos se acomoden en una sola fila*/
+    align-items: center; /*centra el contenido*/
+    justify-content: center; /*centra el contenido*/
+}
+
+/*contenedor principal*/
+.contenedor{
+    width: 80vh; /*80% para el ancho*/
+    max-width: 600px; /*máximo ancho de 600px*/
+    min-height: 500px; /*mínimo alto de 500px*/
+    padding: 20px; /*espaciado interno de 20px*/
+    background-color: white;
+    border: 5px solid black; /*borde de 5px sólido*/
+    border-radius: 30px; /*bordes redondeados de 30px*/
+}
+
+.contenedor-interno{
+    width: 80%; /*80% para el ancho*/
+}
+
+/*contenido*/
+
+#titulo{
+    width: 100%; /*100% para el ancho*/
+    font-weight: bold;
+    text-align: center;
+    font-family:  'Courgette', cursive;
+}
+
+#cita{
+    font-size: 32px;
+    width: 100%; /*100% para el ancho*/
+    display: flex;
+    align-items: center; /*centra el contenido*/
+    justify-content: center; /*centra el contenido*/
+    text-align: center; /*centra el texto*/
+    margin: 10px;
+}
+
+#autor{
+    width: 100%; /*100% para el ancho*/
+    font-size: 25px;
+    display: flex;
+    align-items: center; /*centra el contenido*/
+    justify-content: center; /*centra el contenido*/    
+    padding: 10px;
+    font-family: 'Courgette', cursive;
+}
+
+#anime{
+    width: 100%; /*100% para el ancho*/
+    font-size: 15px;
+    display: flex;
+    align-items: center; /*centra el contenido*/
+    justify-content: center; /*centra el contenido*/    
+    padding: 10px;
+    font-family: 'Courgette', cursive;
+}
+
+#boton-cambiar-cita{
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+}
+
